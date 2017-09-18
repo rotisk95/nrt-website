@@ -1,0 +1,15 @@
+.portfolio-menu{
+
+  //a{
+  //  &:hover{
+  //    text-decoration: none;
+  //    color: $color-accent;
+  //  }
+  //}
+
+
+  .portfolio-menu__link--active{
+    color: $color-accent;
+    text-decoration: none;
+  }
+}

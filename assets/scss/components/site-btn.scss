@@ -1,0 +1,25 @@
+.site-btn{
+  background-color: $color-accent;
+  height: 50px;
+  border-radius: 25px;
+  font-size: $font-size-t5;
+  line-height: $line-height-t5;
+  text-transform: uppercase;
+  padding: 15px;
+  min-width: 170px;
+  text-align: center;
+  display: inline-block;
+  color: $color-text-light !important;
+  font-weight: 600;
+
+  img{
+    height: 14px;
+    margin-top: -5px;
+    margin-right: 5px;
+  }
+
+  &:hover, &:focus{
+    background-color: $color-accent-additional;
+    text-decoration: none;
+  }
+}

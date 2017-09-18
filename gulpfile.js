@@ -60,5 +60,5 @@ function onError(error) {
 
 gulp.task('notify', function () {
   return gulp.src('')
-    .pipe(notify({message: 'What time is it? Adventure time!', onLast: true}));
+    .pipe(notify({message: 'DRAKARYS!!!', onLast: true}));
 });

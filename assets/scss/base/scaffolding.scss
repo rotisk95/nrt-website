@@ -6,12 +6,15 @@ html{
 }
 
 body{
-  //font-family: $font-family-main;
-  //font-size: $font-size-main;
-  //font-weight: $font-weight-main;
-  //line-height: $line-height-main;
-  //color: $color-text-main;
-  //background-color: $color-body;
+  font-family: $font-family-main;
+  font-size: $font-size-t3;
+  font-weight: $font-weight-base;
+  line-height: $line-height-t3;
+  color: $color-text-main;
+}
+
+hr{
+  margin: 0;
 }
 
 ol, ul{
@@ -22,7 +25,7 @@ ol, ul{
 
 // Links
 a{
-  //color: $color-link;
+  color: $color-accent;
   transition: all 0.3s;
   position: relative;
   text-decoration: none;
@@ -32,19 +35,54 @@ a{
     //color: $color-link--visited;
   }
 
-  &:focus{
-    //color: $color-link--focus;
-    outline: none;
-  }
-
-  &:hover{
-    //color: $color-link--hover;
-  }
-
-  &:active{
-    //color: $color-link--active;
+  &:hover, &:focus, a:active{
+    color: $color-accent;
+    text-decoration: underline;
   }
 }
+
+nav {
+  font-size: $font-size-t6;
+  line-height: $line-height-t6;
+  font-family: $font-family-title;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+
+  ul {
+    li {
+      display: inline-block;
+
+      a {
+        padding-right: 50px;
+        color: $color-text-additional;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 7px;
+          height: 2px;
+          bottom: 0px;
+          right: 42px;
+          opacity: 0;
+          transition: background 0.3s;
+          background: $color-accent;
+        }
+
+        &:hover {
+          text-decoration: none;
+          transition: all .15s;
+          color: $color-accent;
+        }
+
+        &:hover:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
 
 // Buttons
 input[type="button"], button{

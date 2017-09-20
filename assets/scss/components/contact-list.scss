@@ -11,10 +11,16 @@
 
   dd{
     padding-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     a{
       color: $color-text-light;
+    }
+  }
+
+  &.contact-list__opacity-titles{
+    dt{
+      opacity: 0.4;
     }
   }
 }

@@ -3,6 +3,7 @@
   padding: 50px 70px 60px 70px;
   margin-top: -270px;
   box-shadow: 0 1px 21px rgba(0,0,0,0.14);
+  margin-bottom: 40px;
 
   .article__back-link{
     font-size: $font-size-t6;
@@ -22,8 +23,6 @@
   }
 
   .article__title{
-    font-size: $font-size-t5;
-    line-height: $line-height-t5;
     font-family: $font-family-title;
     text-transform: uppercase;
     font-weight: 700;
@@ -77,5 +76,13 @@
         color: $color-accent;
       }
     }
+  }
+
+  @media screen and (max-width: 768px){
+    padding: 50px 30px 60px 30px;
+  }
+
+  @media screen and (max-width: 576px){
+    padding: 30px 10px 40px 10px;
   }
 }

@@ -11,6 +11,7 @@
   display: inline-block;
   color: $color-text-light !important;
   font-weight: 600;
+  overflow: hidden;
 
   img{
     height: 14px;
@@ -22,4 +23,26 @@
     background-color: $color-accent-additional;
     text-decoration: none;
   }
+
+  &.site-btn--form{
+    width: 100%;
+    background-color: $color-accent !important;
+    border-radius: 25px !important;
+    font-size: $font-size-t5 !important;
+    line-height: $line-height-t5 !important;
+    font-weight: 600;
+    margin-top: -15px;
+    padding: 0px !important;
+    border: none !important;
+
+    &:hover{
+      background-color: $color-accent-additional !important;
+    }
+
+    &:focus, &:active{
+      box-shadow: none !important;
+    }
+  }
 }
+
+

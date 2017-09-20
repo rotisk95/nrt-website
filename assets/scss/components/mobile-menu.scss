@@ -52,12 +52,12 @@
 
           &:hover{
             opacity: 1;
-            color: $color-accent;
+            //color: $color-accent;
             text-decoration: none;
           }
 
           &:after{
-            background: $color-accent;
+            background: $color-text-light;
             bottom: 14px;
             right: 1px;
           }

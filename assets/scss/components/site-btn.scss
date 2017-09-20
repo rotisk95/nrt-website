@@ -26,15 +26,9 @@
 
   &.site-btn--form{
     width: 100%;
-    background-color: $color-accent !important;
-    border-radius: 25px !important;
-    font-size: $font-size-t5 !important;
-    line-height: $line-height-t5 !important;
-    font-weight: 600;
-    margin-top: -15px;
-    padding: 0px !important;
     border: none !important;
     box-shadow: $box-shadow-btn;
+    position: relative;
 
     &:hover{
       background-color: $color-accent-additional !important;

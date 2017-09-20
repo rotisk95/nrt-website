@@ -27,10 +27,6 @@ modalForm.addEventListener('submit', function(e){
     submitForm(e, modalFormName);
 });
 
-footerForm.addEventListener('submit', function(e){
-    submitForm(e, footerFormName);
-});
-
 function submitForm(e, formName) {
     e.preventDefault();
     var name = $(formName + ' .js-field-name').val();

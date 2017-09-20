@@ -68,12 +68,13 @@
 
     .menu__mobile-button{
       color: $color-text-main !important;
-      opacity: 1;
+      opacity: 0.9;
       margin-top: -5px;
       transition: all 0.3s;
 
       &:hover{
         color: $color-accent !important;
+        opacity: 1;
       }
       &:after{
         background: $color-accent !important;

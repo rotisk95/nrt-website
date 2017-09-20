@@ -8,7 +8,7 @@
   color: $color-text-light;
 
   &::before{
-    background: linear-gradient(54deg, rgba(74,76,179,0.95) 34%,rgba(207,157,157,0.95) 100%);
+    background: $linear-gradient-background;
     //top: 0;
     //bottom: 0;
     height: 100%;

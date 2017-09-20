@@ -34,6 +34,7 @@
     margin-top: -15px;
     padding: 0px !important;
     border: none !important;
+    box-shadow: $box-shadow-btn;
 
     &:hover{
       background-color: $color-accent-additional !important;

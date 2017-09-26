@@ -20,11 +20,11 @@ function validateForm(selector) {
 
 validateForm('.js-form .form-field');
 
-var modalForm = document.querySelector('.js-form');
-var modalFormName = '.js-form';
+var form = document.querySelector('.js-form');
+var formName = '.js-form';
 
-modalForm.addEventListener('submit', function(e){
-    submitForm(e, modalFormName);
+form.addEventListener('submit', function(e){
+    submitForm(e, formName);
 });
 
 function submitForm(e, formName) {
@@ -41,9 +41,10 @@ function submitForm(e, formName) {
 
     $.ajax({
         type: "POST",
-        url: '/mail.php',
+        url: 'mail.php',
         data: formData,
         success: function () {
+            console.log('success');
             //...
         },
         error: function () {

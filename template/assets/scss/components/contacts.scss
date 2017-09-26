@@ -84,6 +84,13 @@
         }
       }
 
+      &::-webkit-contacts-auto-fill-button {
+        visibility: hidden;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+      }
+
       &::-moz-placeholder{
         color: $color-text-light;
         font-size: $font-size-t4;

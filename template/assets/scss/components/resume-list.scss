@@ -47,6 +47,15 @@
     font-weight: 700;
     padding-bottom: 5px;
   }
+  .resume-list__block-company{
+    text-transform: uppercase;
+    color: $color-accent;
+    font-size: $font-size-t5;
+    line-height: $line-height-t5;
+    font-family: $font-family-title;
+    font-weight: 700;
+    padding-bottom: 5px;
+  }
 
   .resume-list__block-date{
     font-family: $font-family-additional;

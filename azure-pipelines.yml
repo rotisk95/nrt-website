@@ -14,4 +14,18 @@ steps:
   inputs:
     rootFolderOrFile: '$(build.sourcesDirectory)'
     includeRootFolder: true
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(1)(7ccb7ec4-ce14-46c8-aad2-ca40db9fe7f1)'
+    appType: 'webAppContainer'
+    WebAppName: 'noel-rt'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'Website'
+    SlotName: 'production'
+    DockerNamespace: 'nrtacr.azurecr.io'
+    DockerRepository: 'nrt98ad'
+    DockerImageTag: 'fe094744dcfa123a9ae58e6e4e60a41eeb5f5898'
+    AdditionalArguments: 
 - task: PublishBuildArtifacts@1
